@@ -39,7 +39,10 @@ We integrated Ethereum in our 2.0 release, which means users can now transfer ET
 
 We already proved that our approach to solving the cross-chain transfer of assets works between 2 networks that use different hashing functions. We can lock assets on native chains and issue their worth in proxy tokens which can be redeemed for the underlying asset at any moment. The entire process is distributed and will be fully decentralized with the advent of POS in 2019. 
 
-Below is a collection of resources for anyone interested in learning more about Wanchain or building on our platform.
+## Architecture
+
+
+
 
 ## FAQ
 
