@@ -41,7 +41,22 @@ We already proved that our approach to solving the cross-chain transfer of asset
 
 Below is a collection of resources for anyone interested in learning more about Wanchain or building on our platform.
 
+## Technical FAQ
 
+
+- Contracts & Implementation
+   _ What virtual machine does Wanchain use ? 
+      - Wanchain is a fork of Ethereum as such it uses the EVM. In the future we will be looking to move towards leading               industry solution such as EWASM
+   - What is the contract implementation language?
+      - The contract implementation language is Solidity
+   - If contracts are implemented in Solidity, are there any differences (even small
+ones) with the EVM (Ethereum Virtual Machine)?
+      - No there shouldn’t be we use the same EVM version as Ethereum
+   - Is there a web3.js (ie Javascript API) equivalent?
+      - Yes, web3 from Ethereum is compatible with Wanchain
+   - Is there any interaction with other protocols or is the network standalone?
+      - Wanchain is a blockchain by itself, we don’t rely on other blockchain
+       protocols
 
 ---
 ## Table of Contents
