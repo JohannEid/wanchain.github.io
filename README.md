@@ -32,7 +32,7 @@ Large sums of funds are trusted to these entities which could at any moment get 
 ##  Wanchain
 
 
-At [Wanchain](https://wanchain.org) our goal is to build out a blockchain which allows for __decentralized transfer of value between heterogenous chains.__ Wanchain aims to host financial applications as they need to access different kind of digital assets 
+At [Wanchain](https://wanchain.org) our goal is to build out a blockchain which allows for __decentralized transfer of value between heterogenous chains.__ Wanchain aims to host financial applications as they need to access different kind of digital assets.
 
 In our view decentralized interoperability solution is the required component that’s necessary to create a new financial system.  The current industry is relying on too many third parties such as centralized exchanges and custodians in order to operate. 
 
