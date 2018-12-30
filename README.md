@@ -41,22 +41,119 @@ We already proved that our approach to solving the cross-chain transfer of asset
 
 Below is a collection of resources for anyone interested in learning more about Wanchain or building on our platform.
 
-## Technical FAQ
+## FAQ Summary
 
 
 - Contracts & Implementation
-   _ What virtual machine does Wanchain use ? 
-      - Wanchain is a fork of Ethereum as such it uses the EVM. In the future we will be looking to move towards leading               industry solution such as EWASM
-   - What is the contract implementation language?
+
+   - What virtual machine does Wanchain use ?
+      - Wanchain is a fork of Ethereum as such it uses the EVM. In the future we will be looking to move towards leading               industry solution such as EWASM**
+      
+    - What is the contract implementation language?_
       - The contract implementation language is Solidity
-   - If contracts are implemented in Solidity, are there any differences (even small
-ones) with the EVM (Ethereum Virtual Machine)?
-      - No there shouldn’t be we use the same EVM version as Ethereum
-   - Is there a web3.js (ie Javascript API) equivalent?
+      
+    - If contracts are implemented in Solidity, are there any differences (even small
+ones) with the EVM (Ethereum Virtual Machine)?_
+       - No there shouldn’t be we use the same EVM version as Ethereum
+      
+    - Is there a web3.js (ie Javascript API) equivalent?_
       - Yes, web3 from Ethereum is compatible with Wanchain
-   - Is there any interaction with other protocols or is the network standalone?
+      
+    - Is there any interaction with other protocols or is the network standalone?_
       - Wanchain is a blockchain by itself, we don’t rely on other blockchain
        protocols
+       
+- Blockchain Specifications
+   - What is the block time?
+      - Same as on Ethereum, about 10 to 20 seconds
+      
+   - What is the block size?
+      - Same behavior as on Ethereum
+      
+   - What is the max tx size?
+      - Same behavior as on Ethereum
+      
+   - What is the current consensus algorithm?
+      - We are currently running POW. We are however looking to implement POS in the coming months.
+      
+   - How does cross chain work?
+      - Wanchain’s cross chain mechanisms consists of locking the assets on the native chain and issuing proxy tokens that represent the ownership of these assets (IOUs) on Wanchain
+      
+   - What technology is used for the cross chain?
+      - We use  SMPC (Secure Multi Party Computing) which allows us to split the private key of the account that will be locking the assets on the native chain. This private key is split between a number of nodes called storemen nodes that sit on the Wan blockchain. Once we need to rebuild the private key, we only need a certain threshold of the storemen nodes to be online thanks to using Shamir's secret sharing.
+      
+   - How do you issue the proxy tokens?
+      - Once the assets are locked vouchers nodes sitting on the WAN blockchain issue proxy tokens corresponding to number of assets locked 
+      
+   - How does a user transfer tokens from any chain to  Wanchain?
+      - Using the Wanchain wallet, the user imports his BTC or ETH address to Wanchain. This address will be the source address. He then inputs the address on Wanchain where he wants to receive the proxy tokens. That will be the destination address. Once this is done the cross chain will take place and the user will receive his proxy tokens on the desired Wanchain address.
+      
+- Fees
+   - How do network fees work?
+      - The network fee intrachain currently work the same way as they would on Ethereum
+      
+   - In what token are they paid?
+      - The tokens fees are paid in Wancoins
+      
+- Token standards
+   - Is there an ERC-20-like token standard?
+      - Yes, the WRC20 standard inherits from the ERC20 standard however we add privacy methods on top of it
+      
+   - How does token precision work? 
+      - Same way as Ethereum
+      
+   - Is there an ERC-721-like token standard?
+      - Yes, it will be the same one as on Ethereum
+      
+   - Is there an EIP-1404-like security token standard? 
+      - Yes, it will be the same one as on Ethereum
+- Infrastructure
+
+   - Is there an Infura-like node-as-a-service provider?
+      - Not yet, it is however being worked on
+      
+- Are there support resources for operating full nodes?  Yes detailed in this document Slide 9.
+   - Is there a live testnet? 
+      - Yes
+      
+- Is there an Etherscan-like block explorer? 
+   - https://www.wanscan.org
+   
+- Wallets
+
+   - Are accounts purely a public/private key pair (like Ethereum) or is there a richer
+   account structure (like EOS)?
+      - Purely public/private key. However, we implemented a WNS (wanchain
+        name service)
+        
+   - Is there a Metamask-like software wallet?
+      - Yes, it is being worked on by community developers and is attached in this [link](https://wanmask.io/)
+      
+   - Is there any hardware wallet support? 
+      - Yes, both Trezor and Ledger
+      
+   - Resources
+   
+    - Are there any development resources available for help with porting a contract to Wanchain ?
+      - Yes we have this in our developer documentation
+    
+   - Activity
+   
+   - How many tokens are live on the network?
+       - WBTC(tokenized BTC), WETH, MKR, DAI, LRC 
+       
+   -  How many exchanges are live on the network?
+      - There are no DEXes live on the network yet. Loopring will deploy its protocol in Q1 2019, talking to others (OasisDEX, IDEX ..)
+      
+- Timeline
+
+   - Is the mainnet live?
+      - Yes, it has been live since January 2018. We just finished our third version release, which is integration with Bitcoin.
+      
+   - Are there any currently planned upgrades to the mainnet?
+      - 2 new top blockchains in 2019 . 
+      - New  top ERC20s.
+      - Implementing POS for 2019.
 
 ---
 ## Table of Contents
