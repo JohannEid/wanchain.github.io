@@ -41,7 +41,7 @@ We already proved that our approach to solving the cross-chain transfer of asset
 
 Below is a collection of resources for anyone interested in learning more about Wanchain or building on our platform.
 
-## FAQ Summary
+## FAQ
 
 
 - Contracts & Implementation
