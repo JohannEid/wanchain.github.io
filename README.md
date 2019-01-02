@@ -1,10 +1,7 @@
-# awesome-wanchain
-A collection of resources related to Wanchain
+# Contribute 
 
-# About
+This document is intended to serve our community and we hope you will be able to contribute to it ! If you find anything missing  please feel free to make a pull request.
 
-Awesome-wanchain aims to be the hub to find useful information about the Wanchain network. 
-__This document is intended to serve our community and we hope you will be able to contribute to it ! If you find anything missing  please feel free to make a pull request.__
 
 ---
 
